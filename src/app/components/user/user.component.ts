@@ -7,7 +7,8 @@ import { DataService } from "../../services/data.service";
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  private users: User[];
+  title: string = "Users";
+  users: User[];
 
   constructor(private dataService: DataService) {
 
