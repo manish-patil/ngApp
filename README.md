@@ -18,6 +18,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running unit tests with coverage
+
+Run `ng test --code-coverage` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The test coverage and the reporting will be done using - [karma-coverage-istanbul-reporter](https://www.npmjs.com/package/karma-coverage-istanbul-reporter) 
+The coverage report should be avilable in the `/coverage/index.html`
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
