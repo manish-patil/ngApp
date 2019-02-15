@@ -2,5 +2,8 @@
   <h1>{{title}}</h1>
   <div *ngFor="let user of users"> 
     <h5>{{user.name}}</h5>
+    <div>
+      <app-user-address [address]="user.address"></app-user-address>
+    </div>
   </div>
 </div>

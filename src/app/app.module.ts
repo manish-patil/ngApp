@@ -4,12 +4,14 @@ import { HttpClientModule } from "@angular/common/http"
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
+import { UserAddressComponent } from './components/user-address/user-address.component';
 import { DataService } from "./services/data.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    UserAddressComponent
   ],
   imports: [
     BrowserModule,
