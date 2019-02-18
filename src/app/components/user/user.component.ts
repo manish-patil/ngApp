@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from "../../services/data.service";
-import { UserAddressComponent } from "../user-address/user-address.component";
 
 @Component({
   selector: 'app-user',
@@ -33,16 +32,16 @@ export class UserComponent implements OnInit {
   }
 }
 
-interface User {
+export interface User {
   id: number,
   name: string,
   username: string,
   email: string,
-  address: Address,
-  phone: string,
-  website: string
-  company: {},
-  posts: Post[]
+  address?: Address,
+  phone?: string,
+  website?: string
+  company?: {},
+  posts?: Post[]
 }
 
 export interface Address {
@@ -50,11 +49,11 @@ export interface Address {
   suite: string,
   city: string,
   zipcode: string,
-  geolat: number,
-  geolng: number
+  geolat?: number,
+  geolng?: number
 }
 
-interface Post {
+export interface Post {
   userId: number,
   id: number,
   title: string,
